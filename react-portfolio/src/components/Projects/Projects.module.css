@@ -1,0 +1,72 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin: 129px auto 50px auto; /* Center align the container */
+  z-index: 1;
+  width: 80%; /* Ensure the width is responsive */
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  text-align: center; /* Center the title */
+}
+
+.slider {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.projectSlide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.dots {
+  display: flex !important;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.customDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: darkgray;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active .customDot {
+  background-color: yellow !important;
+}
+
+.arrow {
+  font-size: 30px;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+    margin: 80px auto 30px auto;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
